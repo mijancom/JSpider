@@ -5,8 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #banner{
+            height: 630px;
+            width: 100%;
+            background-image: url(https://img2.shaadi.com/assests/semlandingpage2/home-banner-ri.webp);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: initial;
+            background-size: cover;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        #navbar{
+            height: 100px;
+            width: 100%;
+            
+            display: flex;
+            margin: auto;
+        }
+        #logo{
+            height: auto;
+            width: auto;
+            margin: 28px 0px 0px 200px;
+            cursor: pointer;
+        }
+        #loginLink{
+            
+            height: 47px;
+            width: auto;
+            text-align: center;
+            margin: auto 0px 0px 640px;
+           
+            
+        }
+        #loginLink> :nth-child(1):hover{
+            text-decoration-line: underline;
+        }
+        #loginLink a{
+            text-decoration-line: none;
+            color: white;
+            padding: 10px;
+            font-family: Roboto,sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            
+            
+        }
+        #Help{
+            height: 47px;
+            width: auto;
+            text-align: center;
+            margin: auto 0px 0px 30px;
+            color: white;         
+        }
+        #Help a{
+            text-decoration-line: none;
+            color: white;
+            padding: 10px;
+            font-family: Roboto,sans-serif;
+            font-size: 16px;
+            cursor: pointer;            
+        }
+        #Help a:hover{
+            text-decoration-line:underline ;
+        }
+        .header{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-top: 260px;
+            text-shadow: 3px;
+            text-decoration-style: initial;
+            
+        }
+       .htext{
+        font-family: Raleway,sans-serif;
+        font-size: normal;
+        font-weight: 400;
+        padding: 10px;
+        text-shadow: 1px 1px 3px #0e0e0e;
+        
+       }
+       #form1{
+        width: 1140px;
+        height: 115px;
+        margin:20px auto;
+        
+        border-radius: 3px;
+        background-color: rgba(0,0,0,.3);
+       }
+    </style>
 </head>
 <body>
-    
+    <div id="banner">
+        <div id="navbar">
+            <div id="logo">
+                <img src="https://img2.shaadi.com/assests/2021/images/Matrimony-Service-by-Shaadi.com.png" alt="">
+            </div>
+            <div id="loginLink">
+                <a href=""> Login</a>
+            </div>
+            <div id="Help">
+                <a >Help</a>
+            </div>
+        </div>
+        <div class="header">
+            <h1 class="htext" >The World's No.1 Matchmaking Service</h1>
+            <h2 class="htext">Search by City, Profession & Community</h2>
+        </div>
+        <div id="form1">
+
+        </div>
+    </div>
 </body>
 </html>
