@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* border: 1px solid rebeccapurple; */
+            height: 30px;
+            width: 100%;
+            
+            
+        }
+        .form{
+            margin-left:300px;
+            
+        }
+        .form-space{
+            margin: 20px;
+        }
+        input{
+            border: 2px solid rgb(136, 136, 136);
+            border-radius: 5px;
+        }
+        #form1{
+            margin-left: 500px;
+            margin-top: 50px;
+        }
+        #buttom1{
+            margin-left: 650px;
+            margin-top: 50px;
+        }
+        .circle{
+            width: 500px;
+            height: 70px;
+            margin: auto;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            display: flex;
+        }
+        .circle div{
+            /* background-color: red; */
+            height: 100%;
+            width: 70px;
+            margin: auto;
+            border-radius: 100%;
+        }
+        #red div{
+            background-color: red;
+
+        }
+        #green div{
+            background-color: rgb(7, 211, 7);
+        }
+        #blue div{
+            background-color: blue;
+        }
+        #buttom2{
+
+            display: flex;
+            margin: auto;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            margin-left: 570px;
+            
+        }
+        #buttom2 button{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form class="form">
+            <label class="form-space">Red</label>
+            <input  type="number">
+            <label class="form-space">Green</label>
+            <input type="number">
+            <label class="form-space">Blue</label>
+            <input type="number">
+        </form>
+    </div>
+    <div>
+        <form id="form1">
+            <label class="form-space">Number Of Circle</label>
+            <input type="number">
+        </form>
+
+    </div>
+    <button id="buttom1" type="submit">Submit</button>
+    <div id="red" class="circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="green" class="circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="blue" class="circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <form id="buttom2">
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+</body>
+</html>
