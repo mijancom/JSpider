@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* background-color: yellow; */
+            background-color: yellow;
+            height: 200px;
+            width:200px ;
+            position: absolute;
+            left: 2px;
+            /* display: flex; */
+            animation-name: Mijan1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #container1{
+            background-color: red;
+            height: 200px;
+            width:200px ;
+            position: absolute;
+            right: 2px;
+            animation-name: Mijan;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes Mijan{
+            from{
+                top:0%;
+            }
+            to{
+                top: 100%;
+            }
+        }
+        @keyframes Mijan1{
+            from{
+                left:0%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes Mijan2{
+            from{
+                bottom:0%;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+        @keyframes Mijan3{
+            from{
+                margin-right:0%;
+            }
+            to{
+                margin-left: 100%;
+            }
+        }
+        #container2{
+            background-color: black;
+            height: 200px;
+            width:200px ;
+            position: absolute;
+            bottom: 2px;
+            animation-name: Mijan2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #container3{
+            background-color: blue;
+            height: 200px;
+            width:200px ;
+            position: relative;
+            top: 420px;
+            margin-left: 1150px;
+            animation-name: Mijan3;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+     <div id="container"></div>
+     <div id="container1"></div>
+     <div id="container2"></div>
+     <div id="container3"></div>
+</body>
+</html>
