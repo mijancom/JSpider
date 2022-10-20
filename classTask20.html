@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #container{
+            width: 300px;
+            height: 400px;
+            border: 2px solid red;
+            margin: auto;
+            font-size: 20px;
+            overflow: scroll;
+        } */
+        #container1{
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin: auto;
+        }
+        #container1 div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid violet;
+        }
+        #container1 >:nth-child(1){
+            background-color: black;
+            /* left: 50px; */
+        }
+        #container1>:nth-child(2){
+            background-color: red;
+            left: 50px;
+            top: 50px;
+        }
+        #container1>:nth-child(3){
+            background-color: yellow;
+            top: 100px;
+            left: 100px;
+        }
+        #container1>:nth-child(4){
+            background-color: blue;
+            left: 150px;
+            top: 150px;
+        }
+        #container2{
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            border: 2px solid red;
+            /* background-image:linear-gradient(red,black,yellow,pink); */
+            /* background-image:radial-gradient(red , black,yellow,pink) ; */
+            background-image:conic-gradient(red , black,yellow,pink) ;
+            
+        }
+        #dvd{
+            border: 1px solid black ;
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            position: relative;
+        }
+        #dvd div{
+            border: 1px solid rgb(90, 89, 89);
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            position: absolute;
+            
+        }
+        #dvd div>div{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            margin: 60px auto auto 63px;
+            border-radius: 100%;
+        }
+        #dvd>:nth-child(1){
+            background-image: conic-gradient(rgb(182, 77, 77),pink,rgb(105, 103, 103));
+            left: 100px;
+            top: 100px;
+        }
+        #dvd>:nth-child(2){
+            background-image: conic-gradient(rgb(182, 77, 77),pink,rgb(105, 103, 103));
+            left: 160px;
+            bottom:250px;
+        }
+        #dvd>:nth-child(3){
+            background-image: conic-gradient(rgb(182, 77, 77),pink,rgb(105, 103, 103));
+            left: 40px;
+            bottom: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="container2"></div>
+
+    <div id="dvd">
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+    </div>
+    <!-- <div id="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet error tempore ex corporis tenetur, nihil doloremque nisi ab esse aperiam repudiandae architecto maxime, aliquam animi, dolores laborum doloribus optio laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quasi, sapiente ipsum aut adipisci dolor nisi ratione iste praesentium quo incidunt dolorem fugiat ullam, inventore autem, enim exercitationem nobis molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet, quaerat earum illum sapiente quisquam consequuntur soluta rerum quasi ratione porro asperiores deserunt cum quo itaque! Quasi officiis nulla in? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium natus vel praesentium omnis? Nulla tempora ea quisquam minima rem iste quibusdam fuga eius dicta vero, cumque itaque unde, magni quae.</p>
+    </div> -->
+</body>
+</html>
