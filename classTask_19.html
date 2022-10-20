@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            border-radius: 100%;
+            margin: auto;
+
+        }
+        #container1{
+            width: 300px;
+            height: 150px;
+            /* background-color: white;
+            border-radius: 75%; */
+            display: flex;
+            margin: auto;
+            
+
+        }
+        .eyes{
+            width: 50px;
+            height: 100px;
+            background-color: white;
+            margin:70px auto auto auto;
+            border-radius: 75%;
+
+        }
+        #ebal1{
+            transform: rotate(-20deg);
+            animation-name: eyes1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #ebal2{
+            transform: rotate(20deg);
+            animation-name: eyes2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;            
+        }
+        
+        @keyframes eyes1{
+            0%{transform: rotate(10deg);}
+            50%{
+                transform: rotate(-10deg);
+            }
+            100%{transform: rotate(10deg);}
+        }
+
+        @keyframes eyes2{
+            0%{transform: rotate(-10deg);}
+            50%{
+                transform: rotate(10deg);
+            }
+            100%{transform: rotate(-10deg);}
+        }   
+        .eyes div{
+            background-color: blue;
+            height: 40px;
+            width: 20px;
+            border-radius: 75%;
+            margin: 30px auto;
+        }
+
+        
+        #container2{
+            background-color: brown;
+            height: 100px;
+            width: 50px;
+            margin: 20px auto;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+
+        }
+        #container3{
+            width: 120px;
+            height: 40px;
+            background-color:red;
+            margin:10px auto;
+            border-radius: 40%;
+            display: flex;
+        }
+        /* #container3 div{
+            background-color: white;
+            height: 15px;
+            width: 15px;
+            margin: 0px auto;
+        } */
+        #teeth{
+            width: 70px;
+            height: auto;
+            margin:auto;
+            display: flex;
+        }
+        #teeth div{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            margin: 0px auto;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="container1">
+            <div class="eyes"><div id="ebal1"></div></div>
+            <div class="eyes"><div id="ebal2"></div></div>
+        </div>
+        <div id="container2"></div>
+        <div id="container3">
+            <divb id="teeth">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
